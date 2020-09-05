@@ -55,6 +55,49 @@ class _MyAppState extends State<MyApp> {
           )
         ],
       ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Container(
+            child: Image.asset(
+              "img/flutter.png",
+              height: 70,
+              color: Colors.green,
+            ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                child: Image.asset(
+                  "img/flutter.png",
+                  height: 40,
+                ),
+              ),
+              Container(
+                child: Image.asset(
+                  "img/flutter.png",
+                  height: 40,
+                  color: Colors.red,
+                ),
+              ),
+            ],
+          ),
+          Container(
+            child: Image.asset(
+              "img/flutter.png",
+              height: 70,
+            ),
+          ),
+          Text(
+            "Flutter",
+            style: TextStyle(
+              color: Colors.blue,
+              fontSize: 70,
+            ),
+          )
+        ],
+      ),
     );
   }
 }
