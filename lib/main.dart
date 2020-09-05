@@ -58,27 +58,44 @@ class _MyAppState extends State<MyApp> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Container(
-            child: Image.asset(
-              "img/flutter.png",
-              height: 70,
-              color: Colors.green,
-            ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          Stack(
+            alignment: Alignment.center,
             children: [
               Container(
-                child: Image.asset(
-                  "img/flutter.png",
-                  height: 40,
+                height: 100,
+                width: 400,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
                 ),
               ),
               Container(
                 child: Image.asset(
                   "img/flutter.png",
-                  height: 40,
-                  color: Colors.red,
+                  height: 70,
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Container(
+                child: Icon(
+                  Icons.headset,
+                  size: 60,
+                ),
+              ),
+              Container(
+                child: Icon(
+                  Icons.map,
+                  size: 60,
+                ),
+              ),
+              Container(
+                child: Icon(
+                  Icons.camera_alt,
+                  size: 60,
                 ),
               ),
             ],
